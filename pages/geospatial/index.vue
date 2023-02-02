@@ -58,7 +58,7 @@ export default {
       header: {
         name: 'Geospatial',
         description:
-          'Inside this section it is possible find some data analysis with a focus on geospatial data. There will be projects starting from simple data treatment and remote sensing up to some examples of machine learning applied to geospatial data analysis.',
+          'Welcome to the Geospatial section! Here, you\'ll discover a range of projects that showcase the potential of geospatial data and its applications. These projects will take you on a journey through the exciting world of geospatial data analysis, from basic data treatment to remote sensing techniques. I hope you\'ll find something new and engaging here',
       },
       pathToGeospatial: 'geospatial',
       animation: {

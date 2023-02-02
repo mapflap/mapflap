@@ -24,11 +24,11 @@ export default {
   props: {
     path: {
       type: String,
-      required: true,
+      required: false,
     },
     id: {
       type: Number,
-      required: true,
+      required: false,
     },
     name: {
       type: String,

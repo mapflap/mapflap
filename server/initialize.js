@@ -16,7 +16,7 @@ export default async (models) => {
             name: "NDVI computation from satellite imagery",
             shortName: "NDVI computation",
             image: "/geospatial/miniature_work_2.png",
-            description: "A little step into the remote sensing world through the computation of the NDVI (Normalized Difference Vegetatio Index) based on Sentinel-2 satellite data. The aim of this index is to assess whether or not the target being observed contains live green vegetation.  (NOTE: it may take a while to load)",
+            description: "A little step into the remote sensing world through the computation of the NDVI (Normalized Difference Vegetation Index) based on Sentinel-2 satellite data. The aim of this index is to assess whether or not the target being observed contains live green vegetation.  (NOTE: it may take a while to load)",
             category: 1,
             url: "http://mapflap.herokuapp.com/summary_work_2_geo",
             finished: 1
@@ -39,6 +39,36 @@ export default async (models) => {
             description: "The aim of this project is to provide an immersive and wonderful experience in visiting one of the most beautiful city of northern Italy: Bergamo. The history of Bergamo is full of art, nature and adventures and the vision of that project is to spread it all over the word making it accesible with an intercative website!",
             category: 3,
             url: "https://locusbergamo.github.io/",
+            finished: 1
+        },
+        {
+            codeWork: 5,
+            name: "CNN for postprocessing of IVT images",
+            shortName: "CNN-IVT",
+            image: "/machine_learning/cnn_ivt.png",
+            description: "Re-implementation of the notebook referred to the 2019 paper by Chapman et al. The purpose is to build a ConvNet able to postprocess the IVT (Integrated Vapor Transport) images derived from NWP models given a set of ground truth IVT values derived from measurement.",
+            category: 2,
+            url: "https://github.com/FBosso/CNN_IVT",
+            finished: 1
+        },
+        {
+            codeWork: 6,
+            name: "Drought forecasting: ML & climate indices",
+            shortName: "ML4Drought",
+            image: "/hidden/NIPA.webp",
+            description: "Slides of my presentation of 03-11-2022 at IHE Delft. Droughts are natural extreme events related to the reduction of water resources availability. Challenges in predicting droughts still remain, especially for sub-seasonal lead-times. In this work, we aim to combine a statistical framework and a Machine Learning (ML) model to detect the links between large-scale climate variables and local precipitation, and exploit them to predict monthly cumulative precipitation with a Neural Network.",
+            category: 2,
+            url: "/hidden/Bosso_Francesco_presentation.pdf",
+            finished: 1
+        },
+        {
+            codeWork: 7,
+            name: "Drought forecasting: ML & climate indices",
+            shortName: "ML4Drought",
+            image: "/hidden/pearson_image_borders.webp",
+            description: "Slides of my presentation of 08-12-2022 at IHE Delft. Droughts are natural extreme events related to the reduction of water resources availability. Challenges in predicting droughts still remain, especially for sub-seasonal lead-times. In this work, we aim to combine a statistical framework and a Machine Learning (ML) model to detect the links between large-scale climate variables and local precipitation, and exploit them to predict monthly cumulative precipitation with a Neural Network.",
+            category: 2,
+            url: "/hidden/Bosso_Francesco_presentation_08-12-2022.pdf",
             finished: 1
         },
 
@@ -111,6 +141,31 @@ export default async (models) => {
             codeTech: 10,
             name: "Postgresql",
             image: "/technologies/postgresql.png",
+        },
+        {
+            codeTech: 11,
+            name: "Matplotlib",
+            image: "/technologies/matplotlib.png",
+        },
+        {
+            codeTech: 12,
+            name: "Pandas",
+            image: "/technologies/pandas.png",
+        },
+        {
+            codeTech: 13,
+            name: "Tensorflow",
+            image: "/technologies/tensorflow.png",
+        },
+        {
+            codeTech: 14,
+            name: "Xarray",
+            image: "/technologies/xarray.png",
+        },
+        {
+            codeTech: 15,
+            name: "Bokeh",
+            image: "/technologies/bokeh.png",
         },
     ]
     await models.Technology.bulkCreate(listaTechnology)
@@ -187,6 +242,66 @@ export default async (models) => {
         {
             codeWork: 4,
             codeTech: 10, 
+        },
+        {
+            codeWork: 5,
+            codeTech: 11, 
+        },
+        {
+            codeWork: 5,
+            codeTech: 12, 
+        },
+        {
+            codeWork: 5,
+            codeTech: 13, 
+        },
+        {
+            codeWork: 5,
+            codeTech: 14, 
+        },
+        {
+            codeWork: 6,
+            codeTech: 11, 
+        },
+        {
+            codeWork: 6,
+            codeTech: 12, 
+        },
+        {
+            codeWork: 6,
+            codeTech: 13, 
+        },
+        {
+            codeWork: 6,
+            codeTech: 14, 
+        },
+        {
+            codeWork: 6,
+            codeTech: 15, 
+        },
+        {
+            codeWork: 7,
+            codeTech: 11, 
+        },
+        {
+            codeWork: 7,
+            codeTech: 12, 
+        },
+        {
+            codeWork: 7,
+            codeTech: 13, 
+        },
+        {
+            codeWork: 7,
+            codeTech: 14, 
+        },
+        {
+            codeWork: 7,
+            codeTech: 5, 
+        },
+        {
+            codeWork: 7,
+            codeTech: 15, 
         },
     ]
     await models.WorkTechnology.bulkCreate(listaWorkTechnology)

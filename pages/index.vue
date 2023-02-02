@@ -7,18 +7,19 @@
       <div class="col-md margin-top">
         <h1 class="header-index mb-4">Mapflap</h1>
         <p class="snippet mb-4">
-          Hi, I'm Francesco. Nice to meet you and welcome to Mapflap! Here you can find some info about myself and a
-          selection of little personal projects. Thanks for dropping by. 👾
+          Hi, I'm Francesco. Nice to meet you and welcome to Mapflap! 
+          Here you can find some info about myself and a selection of little 
+          personal projects. Thanks for dropping by. 👾
         </p>
         <div class="center">
           <NuxtLink to="about-mapflap">
-            <div class="button btn">Read more about Mapflap</div>
+            <div class="button btn typing" id="demo"></div>
           </NuxtLink>
         </div>
       </div>
       <div class="col-md center-div">
 
-        <img height="500px" src="/homepage/face.png" alt="Francesco Memoji">
+        <img class="rotate" height="500px" src="/homepage/face.png" alt="Francesco Memoji">
 
         <!--  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
         <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_rocodyl6.json" background="transparent"
@@ -130,6 +131,19 @@ export default {
       ],
     }
   },
+  mounted() {
+    const text = "Read more about Mapflap";
+    let i = 0;
+
+    function typeWriter() {
+      if (i < text.length) {
+        document.getElementById("demo").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, 70);
+      }
+    }
+    typeWriter();
+  },
 }
 </script>
 
@@ -240,7 +254,7 @@ export default {
   border-radius: 100rem;
   background-color: rgb(166, 90, 58);
   color: white;
-  width: 24rem;
+  width: 23rem;
   font-weight: 600;
   transition: 0.5s;
 }
@@ -248,4 +262,12 @@ export default {
 .button:hover {
   width: 25.5rem;
 }
+
+.rotate {
+  transition: transform .8s ease-in-out;
+}
+.rotate:hover {
+  transform: rotate(5deg);
+}
+
 </style>

@@ -18,7 +18,7 @@
       visualization, will display first the image and than the text -->
       <div class="col-lg-7 order-lg-2 order-2 align-self-center">
         <h2 class="subtitle">
-          The name
+          The Name
           <p class="snippet">
             Map flap, what does it mean? The origin of the name of this little project comes from two main reasons. The
             first one, I must be honest, is because it sounds really good. It seems that those two words were
@@ -41,7 +41,7 @@
         <h2 class="subtitle">The Aim</h2>
         <p class="snippet">
           The aim of this project, as said, is to build a little digital world to show which is my passion. More
-          concretely, i will use Mapflap to share some little works and experiments with any interested human, animal or
+          concretely, I will use Mapflap to share some little works and experiments with any interested human, animal or
           martian (the latter depends again on you Elon) equipped with an internet connection. Have fun and thanks for
           dropping by. 👾
         </p>
@@ -62,11 +62,11 @@ export default {
         section1: {
           id: 0,
           image:
-            'about_mapflap/first_image.png',
+            '/about_mapflap/first_image.webp',
         },
         section2: {
           id: 1,
-          image: 'about_mapflap/second_image.png',
+          image: '/about_mapflap/second_image.webp',
           title: '',
         },
 

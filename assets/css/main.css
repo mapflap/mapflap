@@ -126,4 +126,28 @@ a:link {
 }
 /* FINE CSS condiviso tra all-event.vue.vue & all-poi.vue +++++++++ */
 
+/* Typing cursor */
+.typing::after {
+  content: "";
+  border-left: 8px solid rgba(242, 242, 150, 0);
+  animation: blink 1s step-end 5;
+  width: 20px;
+  height: 20px;
+  margin-left: 2px;
+  border-radius: 2px;
+  
+}
+
+@keyframes blink {
+  0% {
+    border-left: 8px solid rgb(242, 242, 150);
+    opacity: 1;
+  }
+  50% {
+    border-left: 8px solid rgb(242, 242, 150);
+    opacity: 0;
+  }
+}
+/* end typing cursor */
+
 

@@ -22,7 +22,7 @@
 
                 <div v-if="work.finished == 1" class="center">
                     <a :href="work.url">
-                        <div class="button btn mt-3">Have a look!</div>
+                        <div class="button btn mt-3 typing" id="demo"></div>
                     </a>
                 </div>
 
@@ -107,6 +107,20 @@ export default {
             ]
         },
     },
+    mounted() {
+       
+       const text = "Have a look!";       
+       let i = 0;
+   
+       function typeWriter() {
+         if (i < text.length) {
+           document.getElementById("demo").innerHTML += text.charAt(i);
+           i++;
+           setTimeout(typeWriter, 70);
+         }
+       }
+       typeWriter();
+     },
 }
 </script>
 
@@ -120,7 +134,7 @@ export default {
     border-radius: 100rem;
     background-color: rgb(166, 90, 58);
     color: white;
-    width: 24rem;
+    width: 22rem;
     font-weight: 600;
     transition: 0.5s;
 }

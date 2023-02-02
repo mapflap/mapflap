@@ -12,7 +12,7 @@ certain order and do not act directly on the layout for future modifications*/
     <a class="navbar-brand" href="/"
       ><img
         class="logo"
-        src="https://i.ibb.co/NspjQxV/logo.webp"
+        src="/favicon.ico"
         alt="logo"
         width="70"
         height="70"
@@ -65,6 +65,10 @@ export default {
         {
           name: 'Just Because',
           path: '/just-because',
+        },
+        {
+          name: 'Portfolio',
+          path: '/portfolio',
         },
         {
           name: 'About Mapflap',

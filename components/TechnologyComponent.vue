@@ -1,7 +1,7 @@
 <template>
     <div class="row">
      <div class="col">
-            <img height="80px" width="80px" :src="image" :alt="`image - ${name}`">
+            <img height="80px" width="80px" :src="image" :alt="`image - ${name}`" :title="name">
       </div>
     </div>
 </template>

@@ -57,7 +57,7 @@ export default {
       header: {
         name: 'Machine Learning',
         description:
-          'Inside this section it is possible to find some simple data analysis performed with a focus on the machine learning world. Here I will upload experiments with different kind of Machine Learning algorithms.',
+          'Welcome to the Machine Learning section! You\'ll find experiments showcasing the power and versatility of machine learning algorithms. From simple techniques to more advanced approaches, these experiments offer a glimpse into the exciting world of data analysis and machine learning. Whether you\'re an expert or just starting out, I hope you\'ll find something new and interesting here.',
       },
       pathToMachineLearning: 'machine-learning',
       animation: {

@@ -16,7 +16,7 @@ questa component implementa il footer che viene inserito all'interno del default
               <div class="logo">
                 <img
                   class="logo-img"
-                  src="https://i.ibb.co/NspjQxV/logo.webp"
+                  src="/favicon.ico"
                   alt="Logo"
                 />
               </div>
@@ -52,24 +52,26 @@ questa component implementa il footer che viene inserito all'interno del default
             <hr class="line" />
             <NuxtLink class="section" to="/just-because">Just Because</NuxtLink>
             <hr class="line" />
+            <NuxtLink class="section" to="/portfolio">Portfolio</NuxtLink>
+            <hr class="line" />
             <NuxtLink class="section" to="/about-mapflap">About Mapflap</NuxtLink>
           </div>
           <!-- Column 4 - It contains the icons of all social media pages of our site -->
           <div class="col-xl space">
             <div class="row">
               <div class="social col">
-                <a href="https://drive.google.com/file/d/1XArv75Bg1QYiKzWXE4h-9Fh2UOC4xp34/view?usp=sharing"
-                  ><img
+                <nuxt-link to="/portfolio">
+                  <img
                     class="icons"
                     src="/footer/portfolio.png"
                     alt="CV_icon"
-                /></a>
+                /></nuxt-link>
               </div>
                <div class="social col">
                 <a href="https://www.linkedin.com/in/francesco-bosso-614814130/"
                   ><img
                     class="icons"
-                    src="https://i.ibb.co/6tSw7GQ/linkedin.webp"
+                    src="/footer/linkedin.png"
                     alt="linkedin_icon"
                 /></a>
               </div>
@@ -77,7 +79,7 @@ questa component implementa il footer che viene inserito all'interno del default
                 <a href="https://github.com/FBosso"
                   ><img
                     class="icons"
-                    src="https://i.ibb.co/16mgKT5/github.webp"
+                    src="/footer/github.png"
                     alt="github_icon"
                 /></a>
               </div>
