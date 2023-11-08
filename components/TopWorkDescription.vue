@@ -16,11 +16,11 @@ The required parameters are:
 <template>
   <div class="container mt-5">
     <div class="row">
-      <div class="col-lg-6 order-lg-1 order-2">
+      <div class="col-xxl-6 order-xxl-1 order-2">
         <!-- here the image is passed inside the StaticCardComponent in order to be displayed -->
         <StaticCardComponent :image="image" />
       </div>
-      <div class="col-lg-6 order-lg-2 order-1">
+      <div class="col-xxl-6 order-xxl-2 order-1">
         <!-- here Title and Description are passed inside TitleDescription in order to create the 
         descriptive section of the top part of the Event Page -->
         <TitleDescription :name="name" :description="description" />

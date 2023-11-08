@@ -36,6 +36,12 @@ export default {
                     image: '/portfolio/mite.png',
                     link: '/portfolio/files/mite.pdf'
                 },
+                item4: {
+                    id: 3,
+                    name: 'Letter of recommendation',
+                    image: '/portfolio/ec.png',
+                    link: '/portfolio/files/EuropeanCommission.pdf'
+                },
             },
             header: {
                 name: 'Portfolio',

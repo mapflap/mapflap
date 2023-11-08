@@ -23,8 +23,7 @@
             Map flap, what does it mean? The origin of the name of this little project comes from two main reasons. The
             first one, I must be honest, is because it sounds really good. It seems that those two words were
             invented to be used together, isn't it? The second reason why (more serious, I promise) is because of my
-            passion, I am an enthusiastic Geoinformatics Engineering student at
-            Politecnico di Milano and I am interested in all the technologies that help humans to locate themselves
+            passion, I am a Geoinformatics Engineer and I am interested in all the technologies that help humans to locate themselves
             and things on the Earth (Elon, let me know when I can also add Mars).
             The main idea of this project is to build piece by piece a little digital world to show off my passion.
           </p>

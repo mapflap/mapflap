@@ -71,6 +71,26 @@ export default async (models) => {
             url: "/hidden/Bosso_Francesco_presentation_08-12-2022.pdf",
             finished: 1
         },
+        {
+            codeWork: 8,
+            name: "ML-based improvement of sub-seasonal drought forecasting",
+            shortName: "ELM-NN-CNN",
+            image: "/hidden/EGU23.jpg",
+            description: "This is the official abstract of the research work that I will present at EGU General Assembly	 2023. The research examines the forecasting and management of droughts, one of the most severe natural disasters that afflict societies.",
+            category: 2,
+            url: "https://meetingorganizer.copernicus.org/EGU23/EGU23-6685.html",
+            finished: 1
+        },
+        {
+            codeWork: 9,
+            name: "Niño Index Phase Analysis (NIPA) readaptation",
+            shortName: "NewNIPA",
+            image: "/geospatial/miniature_work_4.jpg",
+            description: "Readaptation of the Niño Index Phase Analysis (NIPA) module initially developed by Zimmerman et al. (2016) and then readapted by Giuliani et al. (2019). The present version has been modified to work also for subseasonal lead-times. NIPA is a framework that searches for links between Global and Local variables exploiting the phases of climate indices",
+            category: 1,
+            url: "https://github.com/FBosso/newNIPA",
+            finished: 1
+        },
 
     ]
     await models.Work.bulkCreate(listaWork)
@@ -166,6 +186,11 @@ export default async (models) => {
             codeTech: 15,
             name: "Bokeh",
             image: "/technologies/bokeh.png",
+        },
+        {
+            codeTech: 16,
+            name: "Numpy",
+            image: "/technologies/numpy.png",
         },
     ]
     await models.Technology.bulkCreate(listaTechnology)
@@ -303,6 +328,40 @@ export default async (models) => {
             codeWork: 7,
             codeTech: 15, 
         },
+        {
+            codeWork: 8,
+            codeTech: 12, 
+        },
+        {
+            codeWork: 8,
+            codeTech: 13, 
+        },
+        {
+            codeWork: 8,
+            codeTech: 14, 
+        },
+        {
+            codeWork: 8,
+            codeTech: 5, 
+        },
+
+        {
+            codeWork: 9,
+            codeTech: 12, 
+        },
+        {
+            codeWork: 9,
+            codeTech: 11, 
+        },
+        {
+            codeWork: 9,
+            codeTech: 14, 
+        },
+        {
+            codeWork: 9,
+            codeTech: 16, 
+        },
+        
     ]
     await models.WorkTechnology.bulkCreate(listaWorkTechnology)
 
